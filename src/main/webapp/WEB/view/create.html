@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:form="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a new employee</title>
+</head>
+<body>
+<h3>Welcome, Enter The Employee Details</h3>
+<form method="post" action="/employee/info" modelAttribute="employee">
+    <table>
+        <tr>
+            <td><label name="id">Employee ID: </label></td>
+            <td><input name="id"/></td>
+        </tr>
+        <tr>
+            <td><label name="name">Employee's name: </label></td>
+            <td><input name="name"/></td>
+        </tr>
+        <tr>
+            <td><label name="contactNumber">Contact's number: </label></td>
+            <td><input name="contactNumber"/></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
